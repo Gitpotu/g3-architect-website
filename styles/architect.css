@@ -123,25 +123,61 @@ main {
     font-weight: 700;
 }
 
+/* features section styles */
+.features {
+    margin-top: 120px;
+    display: flex;
+    gap: 120px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-content .card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ten-year-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+.ten-year-badge h2{
+    font-size: 4.25rem;
+}
+
 /* facts section styles */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     margin-top: 90px;
     justify-content: space-around;
 }
-.card {
+
+.facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 35px;
 }
-.facts-card-container .card-stats{
+
+.facts-card-container .card-stats {
     color: #424242;
     font-size: 2.8rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.facts-card-container .card-title{
+
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     font-weight: 600;
@@ -149,10 +185,11 @@ main {
 }
 
 /* sponsors section start */
-.sponsors{
+.sponsors {
     text-align: center;
     margin-top: 180px;
 }
+
 .sponsors-img-container {
     margin-top: 50px;
     display: flex;
@@ -160,7 +197,8 @@ main {
     gap: 20px;
     align-items: center;
 }
-.sponsors-img-container img{
+
+.sponsors-img-container img {
     width: 155px;
 }
 
@@ -180,7 +218,7 @@ main {
     nav,
     .team-container,
     .facts-card-container,
-    .sponsors-img-container{
+    .sponsors-img-container {
         flex-direction: column;
     }
 
@@ -189,16 +227,19 @@ main {
     }
 
     .team-content,
-    .facts-card-container,{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .facts-card-container{
-        gap: 20px;
-    }
-    .sponsors{
-       align-items: center;
-    }
+    .facts-card-container,
+    {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.facts-card-container {
+    gap: 20px;
+}
+
+.sponsors {
+    align-items: center;
+}
 }
 
 /* tablet or medium devices */
